@@ -83,104 +83,27 @@
     </style>
 </head>
 <body>
-    <main class="card">
+  <main class="card">
         <button class="closeButton" type="button" aria-label="Close" onclick="closeWebView()">x</button>
         <h1>Auth Test</h1>
+
         <form method="post" autocomplete="on">
-            <div class="group">
-                <label for="phone">Phone number</label>
-                <input
-                    inputmode="tel"
-                    id="phone"
-                    type="tel"
-                    required
-                    autocomplete="tel"
-                    name="phone"
-                    value=""
-                >
-            </div>
-
-            <div class="group">
-                <form autocomplete="on">
-                    <label for="email">Email address</label>
-                    <input
-                        id="email"
-                        name="email"
-                        type="email"
-                        inputmode="email"
-                        autocomplete="email"
-                        autocapitalize="none"
-                        spellcheck="false"
-                        placeholder="name@example.com"
-                        enterkeyhint="next"
-                        hide-my-email="off"
-                    >
-                </form>
-                </div>
-
-            <div class="group">
-                <label for="password">Password</label>
-                <input
-                    id="password"
-                    type="password"
-                    required
-                    autocomplete="new-password"
-                    autocapitalize="none"
-                    spellcheck="false"
-                    name="password"
-                >
-            </div>
-
-            <div class="group">
-                <label for="first-name">First name</label>
-                <input
-                    id="first-name"
-                    type="text"
-                    required
-                    autocomplete="given-name"
-                    name="first-name"
-                    value=""
-                >
-            </div>
-
-            <div class="group">
-                <label for="last-name">Last name</label>
-                <input
-                    id="last-name"
-                    type="text"
-                    required
-                    autocomplete="family-name"
-                    name="last-name"
-                    value=""
-                >
-            </div>
-
-            <div class="group">
-                <label for="address">Address</label>
-                <input
-                    id="address"
-                    type="text"
-                    required
-                    autocomplete="street-address"
-                    name="address"
-                    value=""
-                >
-            </div>
-
-            <div class="group">
-                <label for="zip-code">ZIP code</label>
-                <input
-                    inputmode="numeric"
-                    id="zip-code"
-                    type="text"
-                    required
-                    autocomplete="postal-code"
-                    name="zip-code"
-                    value=""
-                >
-            </div>
+            <label for="email">Email address</label>
+            <input
+                id="email"
+                name="email"
+                type="email"
+                inputmode="email"
+                autocomplete="email"
+                autocapitalize="none"
+                spellcheck="false"
+                placeholder="name@email.com"
+                enterkeyhint="next"
+                required
+            >
         </form>
     </main>
+ 
 
     <script>
         function closeWebView() {
